@@ -1,0 +1,190 @@
+.img-header{
+    height: 640px;
+    width: auto;
+    background-image: url(../assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: right;
+}
+
+.head-logo img{
+    width: 287px !important;
+    float: right;
+    margin-right: 80px;
+    margin-top: 35px;
+}
+
+.btn{
+    border-radius: 40px;
+
+    background-color: #25865A;
+    border-color: #25865A;
+    color: #fff;
+    margin-top: 500px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: #2b865d;
+    border-color: #2b865d;
+    color: #fff;
+}
+
+.btn:active{
+    background-color: #2b865d !important;
+    border-color: #2b865d !important;
+    color: #fff;
+}
+
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(50%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+.flecha1{
+    color: #25865A !important;
+    background-color: #25865A;
+    margin-left: -100px;
+}
+
+.flecha2{
+    color: #25865A !important;
+    background-color: #25865A;
+    margin-right: -100px;
+}
+
+ /* Bootstrap Lightbox using Modal */
+
+#profile-grid { overflow: auto; white-space: normal; } 
+#profile-grid .profile { padding-bottom: 40px; }
+#profile-grid .panel { padding: 0 }
+#profile-grid .panel-body { padding: 15px }
+#profile-grid .profile-name { font-weight: bold; }
+#profile-grid .thumbnail {margin-bottom:6px;}
+#profile-grid .panel-thumbnail { overflow: hidden; }
+#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    transform: rotate(-20deg);
+    border-radius: 20px;
+    width: 140px;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px !important;
+    margin-left: 100px !important;
+    position: absolute;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  h4{
+    color: #25865A !important;
+  }
+
+  .info{
+    color: #25865A !important;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .info p{
+      width: 300px;
+      font-size: 18px;
+  }
+
+  .info1{
+    color: white !important;
+    text-align: center;
+    font-weight: bold;    
+  }
+
+  .info1 p{
+      width: 300px;
+      font-size: 18px;
+  }
+
+  .btns{
+      margin-left: -220px;
+      border-radius: 5px;
+      width: 100px;
+      height: 40px;
+      margin-bottom: 10px;
+  }
